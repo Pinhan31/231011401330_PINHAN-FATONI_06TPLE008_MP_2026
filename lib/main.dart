@@ -26,7 +26,7 @@ class WorkshopPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Data dummy sesuai kebutuhan soal [cite: 25-30]
+    // Data dummy sesuai kebutuhan
     final List<Map<String, String>> workshops = [
       {
         "judul": "Workshop Flutter Dasar",
@@ -55,7 +55,7 @@ class WorkshopPage extends StatelessWidget {
         foregroundColor: Colors.white,
         centerTitle: true,
       ),
-      // Menggunakan ListView agar tampilan tidak penuh dan bisa di-scroll [cite: 17]
+      // Menggunakan ListView agar tampilan tidak penuh dan bisa di-scroll
       body: ListView.builder(
         padding: const EdgeInsets.all(16),
         itemCount: workshops.length,
@@ -99,7 +99,7 @@ class WorkshopCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Judul Workshop [cite: 26]
+            // Judul Workshop
             Text(
               judul,
               style: const TextStyle(
@@ -108,10 +108,10 @@ class WorkshopCard extends StatelessWidget {
                 color: Colors.indigo,
               ),
             ),
-            const Divider(), // Pemisah visual untuk kejelasan (UX) [cite: 19]
+            const Divider(), // Pemisah visual untuk kejelasan (UX)
             const SizedBox(height: 8),
 
-            // Tanggal [cite: 27]
+            // Tanggal
             Row(
               children: [
                 const Icon(Icons.calendar_month, size: 18, color: Colors.grey),
@@ -121,7 +121,7 @@ class WorkshopCard extends StatelessWidget {
             ),
             const SizedBox(height: 4),
 
-            // Lokasi [cite: 28]
+            // Lokasi
             Row(
               children: [
                 const Icon(Icons.location_on, size: 18, color: Colors.grey),
@@ -131,7 +131,7 @@ class WorkshopCard extends StatelessWidget {
             ),
             const SizedBox(height: 4),
 
-            // Kuota [cite: 29]
+            // Kuota
             Row(
               children: [
                 const Icon(Icons.people, size: 18, color: Colors.grey),
@@ -142,7 +142,7 @@ class WorkshopCard extends StatelessWidget {
 
             const SizedBox(height: 16),
 
-            // Tombol Daftar [cite: 30]
+            // Tombol Daftar
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
